@@ -1,7 +1,7 @@
 # Insert DATA
 
 # --- !Ups
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+--CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 INSERT INTO lan(id, alias, name) VALUES ('6b6ec0cf-ec62-4d56-b5e9-8d077fb2cd39', 'one', 'One Lan');
 INSERT INTO lan(id, alias, name) VALUES ('41bb98ca-0852-4688-9700-3627c23aac9d', 'two', 'Two Lan');

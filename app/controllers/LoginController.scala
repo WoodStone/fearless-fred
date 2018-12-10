@@ -16,7 +16,7 @@ class LoginController @Inject()(val controllerComponents: SecurityComponents, co
     val profileManager = new ProfileManager[CommonProfile](context)
     val profiles = profileManager.getAll(true)
 
-    Ok(Json.toJson(JavaConverters.asScalaBuffer(profiles).toList.toString()))
+    Ok(JavaConverters.asScalaBuffer(profiles).toList.toString())
   }
 
   def login(r: String) = Secure("KeycloakOidcClient") { implicit request =>

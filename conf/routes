@@ -2,15 +2,8 @@
 # Routes
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
-
-#POST    /bin                            controllers.ArticleController.post
-#GET     /bin/:uuid                      controllers.ArticleController.get(uuid)
-#GET     /bin                            controllers.ArticleController.gets(page: Int ?= 1, per: Int ?= 50)
-#DELETE  /bin/:uuid                      controllers.ArticleController.delete(uuid)
-
 GET     /login                          controllers.LoginController.login(r: String ?= "")
 GET     /check                          controllers.LoginController.check
-
 
 GET     /lans                           controllers.LanController.fetchAll
 POST    /lans                           controllers.LanController.create
